@@ -1,0 +1,86 @@
+print(5+3)
+print(5-3)
+print(5*3)
+print(5/3)
+print(5**3)
+print(5//3)
+print(5%3)
+
+
+weight=input("enter weight")
+height=input("etner height")
+BMI=weight/(height**2)
+print(BMI)
+
+
+a=7
+a+=6
+print(a)
+x,y,z=4,8,9
+print(x,y,z)
+print(x<9)
+
+
+a=5
+a+=4
+print(a)
+
+a=5
+b=6
+print(a>2 and b<=10)
+
+
+a=5
+b=6
+print(a>2 & b<=10)
+
+a=5
+b=6
+print(a>2 or b<=10)
+
+a=5
+b=6
+print(not(a))
+a=False
+print(not(a))
+
+a,b=5,4
+print(a&b)
+print(a|b)
+print(a^b)
+print(~a)
+print(a<<2)
+print(a>>2)
+
+a=5
+b=5
+print(a is b)
+print(a==b)
+print(id(a)==id(b))
+print(id(a))
+print(id(b))
+
+a=5
+b='5'
+print(a is b)
+print(a==b)
+print(id(a)==id(b))
+print(a is not b)print(id(a))
+print(id(b))
+
+s="padmaja"
+print("d" in s)
+print("dmaja" in s)
+print("P" in s)
+print("P" not in s)
+l=[5,-2.5,7,98]
+print(5 in l)
+print(5 not in l)
+
+w=input("enter weight in kgs")
+h=input("enter height in meters")
+b=int(w)/(float(h)**2)
+print(int(b))
+
+
+

@@ -1,0 +1,97 @@
+r=["hi",2,"padamaja","hello",3,5,23]
+print(r)
+print(r[2])
+print(len(r))
+print(r[0:2])
+print(r[0:len(r):2])
+l=[1,4,3,5,2,54,64]
+l.sort()
+print(l)
+print(max(l))
+l.reverse()
+print(l)
+l.append(10)
+print(l)
+l.insert(2,15)
+print(l)
+#l.extend(34,23,11)
+print(l)
+l[0]=32
+print(l)
+l[1:4]=[45,56,67]
+print(l)
+l.remove(2)
+print(l)
+l.pop()
+print(l)
+l.pop(2)
+print(l)
+
+EX:
+import random
+a=random.randint(1,5)
+print(a)
+b=random.randrange(1,5)
+print(b)
+c=random.random()
+print(c)
+l=[2,4,13,43,567,586,6,34,1,23,42,5,3]
+d=random.uniform(1,5)
+print(d)
+e=random.choice(l)
+print(e)
+random.shuffle(l)
+print(l)
+
+EX:
+import random
+a=random.randint(0,1)
+if(a==1):
+    print("head")
+else:
+    print("tail")
+
+EX:
+import random
+names=input("enter names separates by comma")
+list=names.split(",")
+print(list)
+length=len(list)
+choice=random.randint(0,length-1)
+print(f"{list[choice]} will pay bill")
+
+
+EX:
+import random
+names=input("enter names separates by comma")
+list=names.split(",")
+print(list)
+c=random.choice(list)
+print(f"{c} will pay bill")
+
+
+
+#index error
+names=["padmaja","seshu","nagu"]
+print(names[len(names)-1])
+a=names[-4]
+print(a)#shows out of index error
+
+
+
+l=[1,23,4,45,[2,34,56],13,23]
+print(l[4])
+print(l[4][2])
+print(len(l))
+print(l[-3])
+print(l[len(l)-1])
+print(l[-3][:])
+print(l[-3][0:])
+print(l[-3][0:2])
+print(l[-3][::])
+print(l[-3][::2])
+
+EX:
+a=[2,4,3,["paddu","seshu","kamakshi","seshu"],23]
+print(len(a))
+print(a[3][3])

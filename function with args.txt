@@ -1,0 +1,109 @@
+def add(a,b):
+    c=a+b
+    print(c)
+add(12,90)
+add(85,10123)
+
+def greet(a,b):
+    print(f"hiii {a}")
+    print(f"are you from {b}")
+greet("jenny","CS")
+
+
+def greet(name,dept):
+    print(f"hiii {name}")
+    print(f"are you from {dept}")
+greet(dept="CS",name="jenny")
+
+
+def greet(name,dept):
+    print(f"hiii {name}")
+    print(f"are you from {dept}")
+greet(dept="CS",name="jenny")
+#greet(name="jenny","CS")#error 1st positional and then remaining
+greet("jenny",dept="CS")
+
+
+def greet(name,sub,dept="CS"):
+    print(f"hii{name}")
+    print(f"Are you from {dept},{sub}")
+greet("jenny","Python",dept="ECE")
+greet("jenny",dept="ECE")# it shows error
+greet(dept="ECE","jenny","Python")#shows error positional args follow keyword args
+
+
+def add(*num):
+    c=0
+    for i in num:
+        c+=i
+    print(c)
+add(87,98,96,14,12,10)
+
+def add(*num):
+    c=0
+    print(num)
+    num[0]=9#it shows error bcoz tuple is immutable
+    for i in num:
+        c+=i
+    print(c)
+add(87,98,96,14,12,10)
+
+
+def add(*num,name):
+    c=0
+    print(num)
+    print(name)
+    for i in num:
+        c+=i
+    print(c)
+#add(87,98,96,14,12,10,"jenny")# it shows error bcoz name after num
+add(87,98,96,14,12,10,name="jenny")
+
+def add(name,*num):
+    c=0
+    print(num)
+    print(name)
+    for i in num:
+        c+=i
+    print(c)
+#add(87,98,96,14,12,10,"jenny")# it shows error bcoz name after num
+add(87,98,96,14,12,10)
+
+
+def add(name,*num):
+    c=0
+    print(num)
+    print(name)
+    for i in num:
+        c+=i
+    print(c)
+#add(87,98,96,14,12,10,"jenny")# it shows error bcoz name after num
+add(87,98,96,14,12,10)
+
+def info_person(**kwargs):
+    for key,value in kwargs.items():
+        print(key,value)
+info_person(name="paddu",age=20,dept="ECE")
+
+
+#def info_person(**kwargs,*args):
+ #   print(args)
+  #  for key, value in kwargs.items():
+   #     print(key, value)
+#info_person(name="paddu", age=20, dept="ECE",2,55,43)#it shows error,bcoz 1st * and then **
+# the order is normal args,arbitary positional args,arbitary keyword args
+
+def info_person(*args,**kwargs):
+    print(args)
+    for key, value in kwargs.items():
+        print(key, value)
+info_person(2,55,43,name="paddu", age=20, dept="ECE")
+
+
+def mul(*args):
+    m=1
+    for i in args:
+        m*=i
+    print(m)
+mul(2,3,-6,8)
+mul(2,5,8,9,0,6)

@@ -1,0 +1,27 @@
+age=int(input("enter your age"))
+age_left=90-age
+days_left=365*age_left
+weeks_left=52*age_left
+months_left=12*age_left
+print(f"no. of days{days_left},no. of weeks{weeks_left},no. of months{months_left}")
+
+h=int(input("enter h"))
+if h>3:
+    print("buy token")
+else:
+    print("no need") 
+
+h=int(input("enter h"))
+if h>3:
+    print("buy token")
+#else:
+    #print("no need") 
+print("out of if block") 
+
+
+#exercise
+a=int(input("enter a number"))
+if(a%2==0):
+    print(a," is an even number")
+else:
+    print(a," is an odd number")

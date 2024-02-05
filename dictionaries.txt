@@ -1,0 +1,93 @@
+phone_no={
+    'Ram':1234,
+    'Sam':2345,
+    'Jai':1111,
+    'Ram':3333#takes this value
+}
+print(phone_no)
+print(phone_no['Sam'])
+phone_no=dict({
+    'Ram':1234,
+    'Sam':2345,
+    'Jai':1111,
+    'Ram':3333#takes this value
+})
+print(phone_no)
+phone_no=dict([('Ram',1234),('Sam',2345),('Jai',1111),('Ram',3333)])
+print(phone_no)
+phone_no['Sam']=9999
+print(phone_no)
+phone_no['Jan']={2222,4444,8888}
+phone_no['Ram']={'Ram_home':8787,'Ram_off':6768}
+print(phone_no)
+print(phone_no['Ram'])
+print(phone_no['Ram']['Ram_off'])
+print(phone_no.get('Sam'))
+print(phone_no.get('sam'))
+del phone_no['Jai']
+print(phone_no)
+print(phone_no.pop('Jan'))
+print(phone_no)
+print(phone_no.popitem())
+print(phone_no)
+phone_no.clear()
+print(phone_no)
+phone_no={
+    'Ram':1234,
+    'Sam':2345,
+    'Jai':1111,
+    'Ram':3333#takes this value
+}
+print(phone_no.keys())
+print(phone_no.values())
+print(phone_no.items())
+for i in phone_no:
+    print(i)
+    print(phone_no[i])
+for i in phone_no.items():
+    print(i)
+print(phone_no)
+phone_no2=phone_no.copy()# to copy into another dictionary
+print(phone_no2)
+print(len(phone_no))# to find length
+
+
+data={
+    1:'jenny',
+    2:'Ram',
+    0:'Sam'
+}
+print(data[0])
+
+ 
+
+
+EXERCISE:
+
+
+student_marks={
+    "Jenny":92,
+    "Harry":78,
+    "Dimpy":56,
+    "Rahul":41,
+    "Aniket":99,
+    "Prem":34
+}
+student_grades={}
+for student in student_marks:
+    marks=student_marks[student]
+    if marks>90:
+        student_grades[student]="A+"
+    elif marks>80:
+        student_grades[student]="A"
+    elif marks>70:
+        student_grades[student]="B+"
+    elif marks>60:
+        student_grades[student]="B"
+    elif marks>50:
+        student_grades[student]="C"
+    elif marks>40:
+        student_grades[student]="D"
+    else:
+        student_grades[student]="F"
+print(student_grades)

@@ -1,0 +1,52 @@
+t=(2,3,4,23,4)
+print(t[4])
+print(t)
+print(t[-4])
+t1=("hi","hello","paddu","nagu")
+print(t1[2])
+print(t1)
+print(t1[-4])
+t2=(10,"hello",10.34,True)
+print(t2[1])
+print(t2)
+print(t2[-4])
+print(type(t1))
+t3=(10,)
+t4=(10)#consider as string
+print(type(t3))
+print(type(t4))
+
+#t[0]=12# we cannot change the value of tuple bcoz they are immutable
+#print(t)#hence it shows errors
+
+print(t[:])
+print(t[1:])
+print(t[:4])
+print(t[1:4])
+print(t[::])
+print(t[::2])
+print(len(t))
+
+# nested tuple
+t5=(t,t1)
+print(t5)
+print(t5[1])
+print(len(t5))
+
+# concatenating tuples
+t7=t+t1
+print(t7)
+print(len(t7))
+print(min(t))
+print(max(t))
+print(t.count(2))# how many times item present in the tuple
+print(t.index(23))# find the index value of the item
+
+#converting list into tuple
+l=[2,4,564,77,23]
+print(l)
+print(tuple(l))
+
+#to print same item multiple times
+tuple=(19,)*5
+print(tuple)

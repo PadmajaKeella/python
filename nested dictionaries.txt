@@ -1,0 +1,13 @@
+student_data={
+    "Ram":{"roll_no":10,"age":20,"course":"Python"},
+    "Sam": {"roll_no":20, "age": 19, "course": "Java"}
+}
+print(student_data)
+print(student_data["Sam"])
+print(student_data["Sam"]["age"])
+student_data["Sam"]["phone_no"]=1231
+print(student_data["Sam"])
+#del student_data["Sam"]["phone_no"]
+#print(student_data["Sam "])
+print(student_data["Sam"].pop("phone_no"))
+print(student_data["Sam"])

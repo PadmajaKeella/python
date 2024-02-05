@@ -1,0 +1,64 @@
+count=1
+while count<=5:
+    print(count)
+    count+=1
+
+count=1
+while count<=5:print(count);count+=1
+    
+
+list1=[2,5,23,65,8,7]
+while list1:
+    print('hi,hello')
+    list1.pop()
+
+
+count=1
+while count<=5:
+    print(count)
+    count+=1
+else:
+    print("else body")
+
+
+count=1
+while count<=5:
+    print(count)
+    count+=1
+    if count==3:
+        break
+else:
+    print("else body")
+
+
+
+num=int(input("enter a number(give -1 to quit)"))
+while num!=-1:
+    print(num)
+    num=int(input("enter a number(give -1 to quit)"))
+else:
+    print("else body")
+
+
+count=0
+while True:
+    print(count)
+    count+=1
+    if count==5:
+        break
+else:
+    print("else body")
+
+
+count=5
+while count>=0:
+    print(count)
+    count-=1
+
+
+total=0
+num=int(input("enter a number"))
+while num>0:
+    total+=num
+    num=int(input("enter a number"))
+print(total)

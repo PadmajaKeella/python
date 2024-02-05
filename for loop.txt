@@ -1,0 +1,51 @@
+          FOR LOOP:
+         -----------
+name='padmaja'
+for i in name:
+    print(i)
+names=['hi','hello','I','am','padmaja']
+for i in names:
+    print(i)
+    if i=='I':
+        print("say hello")
+num=[2,4,6,6423,41,23,99]
+sq=[]
+for i in num:
+    s=i**2
+    sq.append(s)
+    print(s)
+print(sq)
+ n = int(input())
+    for i in n:
+        print(i**2)
+
+         FOR ELSE:
+         ---------
+# for else
+tuple1=(2,4,65,21,46,7)
+for i in tuple1:
+    print(i)
+else:
+    print("for loop completed successfully now we are in for loop")
+
+  
+# for else
+tuple1=(2,4,65,21,46,7)
+for i in tuple1:
+    if i%6==0:
+        print(i)
+        break  #it will exit for loop,it won't go for else block
+    else:
+        print("there is no number divisible by 6")# it will print this stmt for every iteration.this else stmt is related to if stmt
+        
+
+# for else
+tuple1=(2,4,65,21,46,7)
+for i in tuple1:
+    if i%6==0:
+        print(i)
+        break  #it will exit for loop,it won't go for else block
+else:
+    print("there is no number divisible by 6")# it will print this stmt only for one time.this else block is related to for loop this time
+# here even though break present else block is executed because in this ex it won't enter into if condition because in the tuple there is no number divisible by 6
+        

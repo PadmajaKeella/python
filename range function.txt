@@ -1,0 +1,62 @@
+             
+              RANGE FUNCTION
+              ---------------               
+
+a=range(5)
+print(a[0])
+a=range(2,5)
+print(a[0])
+for i in a:
+    print(i)
+a=range(2,6,2)
+for i in a:
+    print(i)
+#a=range('2',10,2)# it shows error bcoz ststr point is a string
+a=range(10,0)# start value cannot exceed stop value,it won't print any value and it doesn't show error
+a=range(10,0,-1)# it print from 10 to 1
+for i in a:
+    print(i)
+b=range(-1,-10,-1)# it print from -1 to -9
+for i in b:
+    print(i)
+c=range(-1,-10,1)# it won't print any value and it doesn't show error
+for i in c:
+    print(i)
+
+             to print sum of 100 numbers
+
+total=0
+for i in range(1,101):
+    total+=i
+print(total)
+
+
+# to calculate sum of even numbers from from 1 to 100
+
+
+
+# 2 ways to do this
+#1st way
+total=0
+for i in range(1,101):
+    if i%2==0:
+        total+=i
+print(total)
+# 2nd way
+s=0
+for i in range(2,101,2):
+    s+=i
+print(s)
+
+# FIZZBUZZ JOB INTERVIEW QUESTION
+
+
+for i in range(1,101):
+    if i%3==0 and i%5==0:
+        print("FIZZBUZZ")
+    elif i%3==0:
+        print("FIZZ")
+    elif i%5==0:
+        print("BUZZ")
+    else:
+        print(i)

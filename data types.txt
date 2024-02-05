@@ -1,0 +1,80 @@
+v1=1239387496358764587624387568972346857
+print(v1)
+print(type(v1))
+
+
+v1=123
+v2=23.54
+print(v1+v2)
+print(type(v1))
+print(type(v2))
+print(type(v1+v2))
+
+
+v1=Ob10
+print(v1)
+print(type(v1))
+v2=OO102
+print(v2)
+print(type(v2))
+v3=Ox123
+print(v3)
+print(type(v3))
+
+
+name="padmaja"
+print(name)
+print(name[4])
+
+
+
+name="padmaja"
+n="lakshmi"
+print(n+name)
+n1="23"
+n3="234"
+print(n1+n3)
+print("jenny\'s \"lecture\"")
+a=True
+print(type(a))
+#b=true
+#print(type(b))
+x=4
+y=10
+v=x>y
+print(type(v))
+
+print(len("padmaja"))
+#print(len(12345)) #error 
+l=len("padmaja")
+#print("length is :"+l)#error
+print("length is :"+str(l))
+print(type(l))
+n=str(l)
+print(type(n))
+""" multiline comments
+int()
+float()
+str()
+"""
+print(10+10)
+print("10"+"10")
+print(int("10")+int("10"))
+print(10+float("10"))
+name="padmaja"
+#print(10+int(name))#value error
+name="1234"
+print(10+int(name))
+# first=input("enter 1st number")
+# second=input("enter 2nd number")
+# sum=first+second
+# print(sum)
+first=input("enter 1st number")
+second=input("enter 2nd number")
+sum=int(first)+int(second)
+print(sum)
+
+n=input("enter 2 digit")
+first=n[0]
+second=n[1]
+print(int(first)+int(second))

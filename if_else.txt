@@ -1,0 +1,119 @@
+h=int(input("enter height"))
+if(h>3):
+    print("you can ride")
+    age=int(input("enter age"))
+    if(age>18):
+        print("pay 500")
+    else:
+        print("pay 250")
+else:
+    print("you can't ride")
+
+
+EX:
+h=int(input("enter height"))
+if(h>3):
+    print("you can ride")
+    age=int(input("enter age"))
+    if(age<12):
+        print("pay 150")
+    elif(age<=18):
+        print("pay 250")
+    else:
+        print("pay 500")
+else:
+    print("you can't ride")
+
+EX:
+h=float(input("enter height"))
+w=float(input("enter weight"))
+b=w/(h**2)
+if(b<16):
+    print("underweight severe")
+elif(b>25):
+    print("underweight moderate")
+elif(b>30):
+    print("underweight mild")
+elif(b>35):
+    print("normal")
+else:
+    print("obese III")
+
+EX:
+a=int(input("enter year"))
+if(a%4==0):
+    if(a%100==0):
+        if(a%400==0):
+            print("leap")
+        else:
+            print("not leap")
+    else:
+        print(" leap")
+else:
+    print("not leap")
+
+EX:
+h=int(input("enter your height"))
+age=int(input("enter your age"))
+bill=0
+if h>3:
+    print("you can ride")
+    if(age<12):
+        bill=150
+        print("ticket rate is 150")
+    elif(age>18):
+        bill=500
+        print("ticket rate is 500")
+    else:
+        bill=250
+        print("ticket rate is 250")
+    photo=input("want photo y/n")
+    if photo=='y' or photo=='Y':
+        bill=bill+50
+    if photo=='n' or photo=='N':
+        bill=bill+0
+else:
+    print("you cant ride")
+
+print(f"bill is{bill}")
+
+
+EX:
+size=input("enter size of pizza s for small l for large m for medium")
+bill=0
+pepperoni=input("y/n")
+if size=='s' or size=='S':
+    bill=150
+    if pepperoni=='y' or pepperoni=='Y':
+        bill=bill+30
+elif size=='m'or size=='M':
+    bill=200
+    if pepperoni=='y' or pepperoni=='Y':
+        bill=bill+30
+else:
+    bill=300
+    if pepperoni=='y' or pepperoni=='Y':
+        bill=bill+50
+cheese=input("y/n")
+if cheese=='y' or cheese=='Y':
+        bill=bill+50
+print(f"bill is{bill}")
+
+
+EX:
+n1=input("enter 1st string")
+n2=input("enter 2nd string")
+com=n1+n2
+low=com.lower()
+t=low.count('t')
+r=low.count('r')
+u=low.count('u')
+e=low.count('e')
+true=t+r+u+e
+l=low.count('l')
+o=low.count('o')
+v=low.count('v')
+e=low.count('e')
+love=l+o+v+e
+score=int(str(true)+str(love))
+print(score)

@@ -1,0 +1,36 @@
+
+        # to find the average height of a person in the list
+
+h=input("enter the heights")
+h_list=h.split()
+count=0
+for i in h_list:
+    count+=1
+for i in range(count):
+    h_list[i]=int(h_list[i])
+print(h_list)
+total=0
+for person in h_list:
+    total+=person
+avg=total/count
+print(total)
+print(avg)
+avg=round(avg)
+print(avg) 
+
+
+# to find the maximum number in a list
+
+
+n=input("enter numbers")
+num=n.split()
+count=0
+for i in num:
+    count+=1
+maxi=0
+for i in range(count):
+    maxi=0
+    num[i]=int(num[i])
+    if(num[i]>maxi):
+        maxi=num[i]
+print(maxi)

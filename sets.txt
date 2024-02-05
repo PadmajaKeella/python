@@ -1,0 +1,136 @@
+         BASICS ON SETS
+        -----------------
+s1={10,3,23,45,True,"paddu"}
+print(s1)
+#print(s1[2])# shows error
+#slicing is not allowed
+# to add item to a set
+s1.add(99)
+print(s1)
+print(len(s1)) 
+# to remove an item from a set
+s1.remove(10)
+print(s1)
+# to remove an item  which is not present in a set
+#s1.remove(100)
+#print(s1)
+s1.discard(3)
+print(s1)
+#if item is not present in set it won't show an error
+s1.discard(33)
+print(s1)
+# to clear
+#s1.clear()
+#print(s1)
+# pop removes an item randomly from a set
+s1.pop()
+print(s1)
+print(s1.pop())
+# a tuple can be added in a set
+s1.add((10,80,70))
+print(s1)
+# a list can be added in a set
+s1.add([10,80,70])# a list cannot be added to a set it shows unhashable error , set uses hash data structure to store data
+print(s1)
+
+
+      OPERATIONS ON SETS
+      -------------------
+#UNION
+set1={1,2,3,4,5}
+set2={4,5,6,10,11}
+print(set1.union(set2))
+print(set2.union(set1))
+print(set1 | set2)
+set3={3,5,7,89,0}
+#we can union multiple sets
+print(set1 | set2 | set3)
+print(set1.union(set2,set3))
+print(set1.union((2,8,9)))
+print(set1.union([2,8,9]))
+#print(set1 | (2,8,9))# shows error
+set1.update(set2)
+print(set1)
+set1|=set2
+print(set1)
+# INTERSECTION
+set1={1,2,3,4,5}
+set2={4,5,6,10,11}
+print(set1.intersection(set2))
+print(set2.intersection(set1))
+print(set1 & set2)
+print(set2 & set1)
+print(set2 & set1 & set3)
+print(set1.intersection(set2,set3))
+set1.intersection_update(set2)
+print(set1)
+set1&=set2
+print(set1)
+set1.intersection_update([10,20])
+print(set1)
+
+      DIFFERENCE
+     ------------
+# DIFFERENCE
+set1={1,2,3,4,5}
+set2={4,5,6,10,11}
+print(set1.difference(set2))
+print(set2.difference(set1))
+print(set1 - set2)
+set3={3,5,7,89,0}
+#we can union multiple sets
+print(set1 - set2 - set3)
+print(set1.difference(set2,set3))
+print(set1.difference((2,8,9)))
+print(set1.difference([2,8,9]))
+#print(set1 | (2,8,9))# shows error
+set1.difference_update(set2)
+print(set1)
+set1={1,2,3,4,5}
+set2={4,5,6,10,11}
+set1-=set2
+print(set1)
+
+
+       SYMMETRIC DIFFERENCE
+      -----------------------
+# SYMMETRIC DIFFERENCE
+set1={1,2,3,4,5}
+set2={4,5,6,10,11}
+print(set1.symmetric_difference(set2))
+print(set2.symmetric_difference(set1))
+print(set1 ^ set2)
+set3={3,5,7,89,0}
+#we can union multiple sets
+print(set1 ^ set2 ^ set3)
+#print(set1.symmetric_difference(set2,set3))# error 2 sets are not allowed
+print(set1.symmetric_difference((2,8,9)))
+print(set1)
+print(set2.symmetric_difference([2,8,9]))
+print(set2)
+#print(set1 | (2,8,9))# shows error
+set1.symmetric_difference_update(set2)
+print(set1)
+set1={1,2,3,4,5}
+set2={4,5,6,10,11}
+set1^=set2
+
+set1={'Ram','Sam','Jenny'}
+set2={'Jiya','Aakash'}
+print(set1.isdisjoint(set2))
+print(set1.isdisjoint((2,'hi','Sam')))
+set1={'Ram','Sam','Jenny','Jiya','Aakash'}
+set2={'Jiya','Aakash'}
+print(set2.issubset(set1))
+print(set2<=set1)
+
+set1={'Ram','Sam','Jenny','Jiya','Aakash'}
+set2={'Jiya','Aakash'}
+print(set1.issuperset(set2))
+print(set1>=set2)
+# the difference b/w clear and del 
+set2.clear()
+print(set2)
+del set1
+print(set1)# it shows error bcoz the entire set is deleted
+print(set1)

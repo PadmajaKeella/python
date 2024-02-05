@@ -1,0 +1,11 @@
+r1=['😊','😊','😊']
+r2=['😊','😊','😊']
+r3=['😊','😊','😊']
+m=[r1,r2,r3]
+print(f"{r1}\n{r2}\n{r3}")
+a=input("enter value to store")
+b=int(a[0])
+c=int(a[1])
+row=m[b-1]
+row[c-1]='X'
+print(f"{r1}\n{r2}\n{r3}")

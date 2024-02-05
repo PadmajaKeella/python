@@ -1,0 +1,45 @@
+r1=['😊','😊','😊']
+r2=['😊','😊','😊']
+r3=['😊','😊','😊']
+m=[r1,r2,r3]
+print(f"{r1}\n{r2}\n{r3}")
+a=input("enter value to store")
+b=int(a[0])
+c=int(a[1])
+row=m[b-1]
+row[c-1]='X'
+print(f"{r1}\n{r2}\n{r3}")
+
+
+
+project-1:
+import random
+s="""enter the value
+0 for Rock
+1 for paper
+2 for scissor"""
+user=int(input(s))
+print(user)
+com=random.randint(0,2)
+print("my number")
+print(com)
+if(com==0 and user==2):
+    print("you lose")
+    print("rock wins against scissor")
+elif(com==2 and user==0):
+    print("you won")
+    print("rock wins against scissor")
+elif(com==user):
+    print("tie")
+elif(user>com):
+    print("you won")
+    if(com==0 and user==1):
+        print("paper wins against rock")
+    else:
+        print("scissor wins against paper")
+else:
+    print("you lose")
+    if(com==1 and user==0):
+        print("paper wins against rock")
+    else:
+        print("scissor wins against paper")
